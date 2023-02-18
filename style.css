@@ -107,7 +107,13 @@ aside {
     color: white;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.26);
     font-weight: 700;
+    cursor: pointer;
 }
+
+.btn:hover {
+    background-color: hsla(76, 73%, 54%, 0.699);
+}
+
 
 .about-us {
     padding: 1.5rem;
