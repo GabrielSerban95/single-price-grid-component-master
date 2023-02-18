@@ -1,0 +1,145 @@
+/* Resets */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Karla', sans-serif;
+    display: grid;
+    place-content: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* General CSS */
+
+.card {
+    max-width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    color: hsl(218, 22%, 67%);
+    overflow: hidden;
+    transition: .15s ease-out;
+}
+
+.main {
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: hsl(179, 62%, 43%);
+}
+
+h2 {
+    font-size: 1rem;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: .875rem;
+    word-spacing: 1px;
+}
+
+.description {
+    line-height: 2;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 1.5rem;
+}
+
+.subscription {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.price {
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    color: hsla(203, 44%, 93%, 0.589);
+}
+
+.price-cost {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.btn {
+    width: 100%;
+    padding: .875rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(76, 73%, 54%);
+    color: white;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.26);
+    font-weight: 700;
+}
+
+.about-us {
+    padding: 1.5rem;
+    background-color: hsl(179, 42%, 54%);
+    color: white;
+}
+
+.why {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.about-us p {
+    color: hsla(203, 44%, 93%, 0.685);
+}
+
+@media (min-width: 600px) {
+    .card {
+        max-width: 600px;
+        transition: .15s ease-in;
+    }
+
+    .main {
+        padding: 2rem;
+    }
+
+    aside {
+        flex-direction: row;
+    }
+
+    .details, .about-us {
+        padding: 2rem;
+        flex: 1;
+    }
+}
